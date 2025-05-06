@@ -21,8 +21,8 @@ export class CalculadoraComponent {
 
 
     onCalcular(){
-      let num1 = 10;
-      let num2 = 20;
+      let num1 = this.calculadoraForm.get('num1')?.value;
+      let num2 = this.calculadoraForm.get('num2')?.value;
       this.resultado = num1+num2;
     }
 }
